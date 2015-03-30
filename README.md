@@ -5,7 +5,7 @@ http://androidweekly.net/issues/issue-145
 
 ## 目的
 
-翻译 Laravel 官方文档，目录见文件 [TOC.md](TOC.md)
+翻译官方文档，目录见文件 [TOC.md](TOC.md)
 
 ## 操作示例
 
