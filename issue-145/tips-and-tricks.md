@@ -1,7 +1,7 @@
 # 安卓Material支持库：Electric Boogaloo的提示与技巧
 如果你之前阅读过我[先前的博客文章](http://code.hootsuite.com/tips-and-tricks-for-android-material-support-library/)和链接的教程，那么你应该有这样一个应用程序，它使用Material 支持库，并且看起来非常得体。这篇文章的重点是帮你的设计增加一些亮点，并且让它更接近Google Material 设计指南。最好的部分是：这些设计不需要设计师或新的资产。  
 
-![Rr32ynHS1.png](images/Rr32ynHS1.png)  
+![Rr32ynHS1.png](../images/Rr32ynHS1.png)  
 
 ## 连锁反应 
 连锁反应
@@ -30,7 +30,7 @@
     </ripple>   
 ```
 
-![johnybot](images/RippleDrawable.gif) 
+![johnybot](../images/RippleDrawable.gif) 
 
 如果你不喜欢默认的灰色，你可以指定在你的主题中`colorControlHighlight `的颜色。但是，对于这点我提出警示，因为它会偏离你应用程序的内容，并且几乎没有 Google 设计的应用程序会这样做。
 
@@ -53,18 +53,18 @@ In code:
     view.setBackgroundResource(backgroundResource);   
 ```
 
-![hootsuite](images/selectableItemBackground.gif) 
+![hootsuite](../images/selectableItemBackground.gif) 
 
 如果你想使连锁反应来扩展之前的视图的边界，那么你就可以使用 `?attr/selectableItemBackgroundBorderless`。它与 ImageButtons 和部分大视图的较小的 Buttons 能很好的兼容。 
 
-![Material](images/selectableItemBackgroundBorderless.gif) 
+![Material](../images/selectableItemBackgroundBorderless.gif) 
 
 ## 带有风格的对话框
 当 AlertDialogs 和 ProgressDialogs 在 Lollipop 设备中运行时，AlertDialogs 和ProgressDialogs 与 material 设计应该自动显示不幸的是,除非你手动改变它们，否则它们就会呈现为默认的蓝绿色。如果你喜欢蓝绿色，那么就这样设置即可——但是我们可以很容易地使对话框与应用程序的主题相匹配。 
 
-![Material](images/DialogNew-300x148.png)  
+![Material](../images/DialogNew-300x148.png)  
  
-![Material](images/ProgressOld-300x84.png) 
+![Material](../images/ProgressOld-300x84.png) 
 
 ### 全部对话框
 想让你的按钮适合你的主题非常简单，只需要创建一个风格，然后将它添加到你的主题中。在AlertDialog 中的按钮以及 ProgressDialog 中的 ProgressBar 的颜色是由 colorAccent 属性决定的。
@@ -86,9 +86,9 @@ themes.xml:
     </style> 
 ```
 
-![Material](images/DialogNew-300x148.png) 
+![Material](../images/DialogNew-300x148.png) 
 
-![Material](images/ProgressNew-300x101.png) 
+![Material](../images/ProgressNew-300x101.png) 
 
 ### 破坏性的对话框
 当[ Material设计指南 ](http://www.google.com/design/spec/material-design/introduction.html)首次发布时，其中包括一个为破坏性对话框的单独的设计。这个设计有一个红色的按钮，它是用来强调正在执行的操作具有破坏性的。要想实现这一功能，你可以在你的对话框主题中重写 buttonBarPositiveButtonStyle 属性： 
@@ -108,7 +108,7 @@ styles.xml:
 
 想要为特定的 AlertDialog 使用这一风格，你需要在 AlertDialog.Builder 构造函数中指定一个主题： 
  
-![Material](images/DialogDestructive-300x150.png)
+![Material](../images/DialogDestructive-300x150.png)
 
 ### 在每个平台上的Material 对话框
 如果你想让你的对话框拥有跨所有 Android 版本的 Material 外观，你需要自定义对话框风格或库。我不喜欢白费力气做重复工作，所以我建议使用一个可用的库： 
@@ -146,7 +146,7 @@ iconView.setColorFilter(getResources().getColor(R.color.primary_dark));
 
 [This](http://stackoverflow.com/questions/11095222/android-imageview-change-tint-to-simulate-button-click/18724834#18724834) Stack Overflow 向你展示了一种很好的方式来改变图标颜色，它是基于其状态，通过创建 ImageView 的一个子类实现的。你也可以重用你的 ColorStateList ，如使用 v-21 tint：
 
-![Material](images/DrawerHighlight-300x137.png) 
+![Material](../images/DrawerHighlight-300x137.png) 
 
 ## 总结
 让你的应用程序遵循 Google 的 Material 设计指南基本方针并不是特别困难的。许多事情甚至都不需要设计师。有了这些基础知识，你就可以学习更加复杂的概念，如 animation and elevation。 

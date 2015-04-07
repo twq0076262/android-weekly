@@ -2,7 +2,7 @@
 
 2015年3月19日由 [Einar Valgeirsson[(http://www.jayway.com/author/einar-valgeirssonjayway-com/) 在 [Android](http://www.jayway.com/category/android/) 中[测试](http://www.jayway.com/category/testing/) | [无评论](http://www.jayway.com/2015/03/19/parameterized-testing-with-robolectric/#respond)
 
-![Robolectric](images/DSC_9510-150x150.jpg) 
+![Robolectric](../images/DSC_9510-150x150.jpg) 
 
 在我们目前的项目中，我们使用 [Robolectric](https://github.com/robolectric/robolectric) 为 Android 应用程序编写单元测试，并且它一直都很好用。最近我需要编写一个操作需要执行几次并且需要用到不同的测试数据的一个测试用例，还要断言正确的行为发生取决于数据。 
 
