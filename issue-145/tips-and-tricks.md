@@ -2,7 +2,7 @@
 
 如果你之前阅读过我[先前的博客文章](http://code.hootsuite.com/tips-and-tricks-for-android-material-support-library/)和链接的教程，那么你应该有这样一个应用程序，它使用Material 支持库，并且看起来非常得体。这篇文章的重点是帮你的设计增加一些亮点，并且让它更接近Google Material 设计指南。最好的部分是：这些设计不需要设计师或新的资产。  
 
-![Rr32ynHS1.png](../images/issue-145/issue-145/Rr32ynHS1.png)  
+![Rr32ynHS1.png](../images/issue-145/Rr32ynHS1.png)  
 
 ## 连锁反应 
 
