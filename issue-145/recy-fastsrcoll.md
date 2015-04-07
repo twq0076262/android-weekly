@@ -1,7 +1,6 @@
 # RecyclerView FastScroll – Part 2
 
 [请留言](https://blog.stylingandroid.com/recyclerview-fastscroll-part-2/#respond) 
-(../images/issue-145/issue-145
 在[之前的文章](https://blog.stylingandroid.com/recyclerview-fastscroll-part-1)中，我们学会了 FastScroller 控制框架。在这一结束篇中，我们将添加触摸和滚动行为。 
  
 ![Recycler](../images/issue-145/31.gif) 

@@ -1,5 +1,3 @@
-![用户体验](../images/issue-145/blogheader2.png)
-
 # 在谷歌市场上创造更好的用户体验 
 
 不管它是一种[跟踪训练的方法](https://play.google.com/store/apps/details?id=com.fitnesskeeper.runkeeper.pro)，[chart the nighttime stars](https://play.google.com/store/apps/details?id=com.escapistgames.starchart) ，或是 [build a new reality](https://play.google.com/store/apps/details?id=com.supercell.clashofclans)，争夺世界霸权，谷歌市场为开发人员提供了一个创建引人入胜的应用程序和游戏的平台，从而打造一个成功的企业。关键的任务是用户在谷歌市场上搜索应用程序和游戏的时候可以享受到一种积极地体验。现在我们利用两个更新来提升开发人员和用户的体验。

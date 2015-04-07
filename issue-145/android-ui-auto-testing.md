@@ -2,7 +2,7 @@
 ## 概述
 这篇文章回顾了 Android UI 测试的四个策略，目的是创建快速、可靠和容易调试的 UI 测试。 
 
-开始之前，请不要忘记导入的规则：可以单元测试的要单元测试。Robolectric 和 gradle unit tests support 就是 Android 单元测试框架的很好的例子。UI 测试，从另一方面来说，是用来验证你的应用程序能否返回与设备中一系列的用户动作相呼应的正确的 UI 输出。Espresso 是一个很好的框架，用来在同一(../images/issue-145/issue-145进程中运行 UI 操作和验证。更多关于 Espresso 和 UI Automator 工具，请参阅：test support libraries。 
+开始之前，请不要忘记导入的规则：可以单元测试的要单元测试。Robolectric 和 gradle unit tests support 就是 Android 单元测试框架的很好的例子。UI 测试，从另一方面来说，是用来验证你的应用程序能否返回与设备中一系列的用户动作相呼应的正确的 UI 输出。Espresso 是一个很好的框架，用来在同一进程中运行 UI 操作和验证。更多关于 Espresso 和 UI Automator 工具，请参阅：test support libraries。 
 
 Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一个 UI 测试的策略中的经验教训。请继续关注带有更多的细节和代码示例的文章。 
 
