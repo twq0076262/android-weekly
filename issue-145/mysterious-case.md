@@ -99,7 +99,7 @@
 
 我们的蜘蛛意识开始发麻...... 
 
-![映射与包的神秘关系](images/1-GokSVk3wQIhGoCQtVIwNTA.gif) 
+![映射与包的神秘关系](../images/1-GokSVk3wQIhGoCQtVIwNTA.gif) 
 
 ###步骤2：编写映射 
 
@@ -152,7 +152,7 @@
 
 让我们更深一层！ 
 
-![映射与包的神秘关系](images/1-TOBlt2WOVLElnQTyG-R7YQ.gif) 
+![映射与包的神秘关系](../images/1-TOBlt2WOVLElnQTyG-R7YQ.gif) 
 
 ### 步骤3：编写映射值 
 
@@ -199,7 +199,7 @@
 
 我现在想知道，对于映射他们是否使用了一些完全非法的捷径，不知怎的就将他们变成了哈希映射？ 
 
-![映射与包的神秘关系](images/1-zA893bdM9QmLYPlRe7estg.gif) 
+![映射与包的神秘关系](../images/1-zA893bdM9QmLYPlRe7estg.gif) 
 
 ###步骤4：将映射写到包中 
 
@@ -241,7 +241,7 @@
 
 黑洞与启示
 
-![映射与包的神秘关系](images/1-zA893bdM9QmLYPlRe7estg.gif) 
+![映射与包的神秘关系](../images/1-zA893bdM9QmLYPlRe7estg.gif) 
 
 好吧，这里的**图片已经很清楚**了。当映射被写进一个包中时已经完全失去他们的类型了，所以**当他们进行回读的时候没有办法对信息进行恢复**。
 
@@ -371,5 +371,5 @@
 
 并且记住：没有打败你的事情只会让你变得更强，或者更疯狂。
 
-![映射与包的神秘关系](images/0-40IPQ7jhknFGYKNR-.gif) 
+![映射与包的神秘关系](../images/0-40IPQ7jhknFGYKNR-.gif) 
 
