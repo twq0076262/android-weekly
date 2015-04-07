@@ -1,20 +1,20 @@
-# Android Weekly 中文版
+# Android Weekly145 中文版
 
-官方英文原版：   
-http://androidweekly.net/issues/issue-145
+Android Weekly相当于是Android开发社区的实时通讯录，每周报导Android最新讯息，包括新的库、工具和博客等，只要你有Email，就可以对其进行订阅，了解更多关于安卓的消息。
 
-## 目的
+**145篇介绍内容:**
 
-翻译官方文档，目录见文件 [TOC.md](TOC.md)
+- 安卓Material支持库：Electric Boogaloo的提示与技巧
+- Android UI 自动化测试
+- RecyclerView FastScroll – 第二部分
+- 根据Material 设计导航制图工具样式
+- Android的模糊视图
+- 附加Android工件和Gradle的档案
+- 映射与包的神秘关系
+- 响应式编程
+- 延期的共享元素转换(3b)
+- 用Robolectric进行参数化测试
+- Android 和 iOS 嵌入 API
 
-## 操作示例
 
-https://github.com/jikexueyuanwiki/guide
-
-## 如何添加图片
-
-前提：官网上的所有图片都已经下载下来放入「images」文件夹，图片的文件名没做任何修改。
-
-1、请引用「images」文件夹中的图片，不要直接引用官方上的图片链接；    
-2、引用「images」文件夹时，请使用相对文件路径。
-
+本教程部分章节内容来源于 [Android Weekly145](http://androidweekly.net/issues/issue-145)
