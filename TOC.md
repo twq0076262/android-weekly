@@ -1,4 +1,4 @@
-- [Issue #145](issue-145/index.md)
+ - [Issue #145](issue-145/index.md)
  
  - [安卓Material支持库：Electric Boogaloo的提示与技巧-Tips and Tricks for Android Material Support Library](issue-145/tips-and-tricks.md)
  
