@@ -1,6 +1,6 @@
-# 根据Material 设计导航制图工具样式 
+# 根据 Material 设计导航制图工具样式 
 
-![Material](../images/1-hLe32r_m-fWUQrnJCalKkQ.png)  
+![Material](../images/issue-145/1-hLe32r_m-fWUQrnJCalKkQ.png)  
 
 ## 简介 
 
@@ -30,13 +30,13 @@
 
 过去，Navigation Drawer 和 ActionBar 处于相同层次的视图中。 
  
-![Material](../images/1-Vh9mKyCUMDCFMFjM8ZEG9Q.png) 
+![Material](../images/issue-145/1-Vh9mKyCUMDCFMFjM8ZEG9Q.png) 
 
 随着模式演化，开始有一些不一致。当 Material 设计出现时，可以很清楚的看到这两部分不再处于视图的同一层次中。关于这点有[许多讨论](https://plus.google.com/+RomanNurik/posts/3G8zYvN5oRC)，[甚至更多](http://goo.gl/SHrQmd)，[但是 Google 没有给出太多有用的东西](http://goo.gl/FghQhb)，而现在导航制图工具的位置定义如下：  
 
 *左侧导航制图工具跨屏幕的整个高度，制图工具处于状态栏下方。所有制图工具下的东西都被幕布遮住变暗。幕布下的内容仍然是可见的。* 
 
-![Material](../images/1-Gg34WwPMo1ylOX7KLPaY0w.png)
+![Material](../images/issue-145/1-Gg34WwPMo1ylOX7KLPaY0w.png)
 
 *注意图片中右侧的制图工具有些不同。* 
 
@@ -46,7 +46,7 @@
 
 如果你在一些 Google 应用程序中看到如下所示的东西，不用担心： 
 
-![Material](../images/1-ncHm2VDOAU4GRN5Act_P5A.png) 
+![Material](../images/issue-145/1-ncHm2VDOAU4GRN5Act_P5A.png) 
 
 Google+ 照片可能是最后一个制图工具没有在 actionBar/Toolbar 上的 Google 应用程序，我相信下次更新会修复这个问题。 
  
@@ -54,13 +54,13 @@ Google+ 照片可能是最后一个制图工具没有在 actionBar/Toolbar 上�
 
 你还记得当打开制图工具时，在 actionBar/toolbar 出现的别致的图标动画吗？在 Holo 中，动画并不别致，但是 Material 设计使得动画看起来非常棒。 
 
-![Material](../images/1-QfXDV7tpaGwEqil_l6Pe8Q.gif) 
+![Material](../images/issue-145/1-QfXDV7tpaGwEqil_l6Pe8Q.gif) 
 
 我认为它首先出现在 Google 的 Play Store 中，然后多数开发人员和设计师都喜欢它。 
 
 但是不久之后，在[动画](https://lh6.googleusercontent.com/-9oPeSA7FUkI/VOs530mLbLI/AAAAAAABapc/ekQNTZPXyoE/w499-h281-no/tumblr_inline_nk2y80nOF91rllljr.gif)上出现了制图工具，如前部分解释的那样。在当时是非常奇怪的，因为它也出现在 Google 的 Material 设计视频和商品推销功能中。 
  
-![Material](../images/1-XI72aAgZON-g0F_Teo6kiA.jpeg) 
+![Material](../images/issue-145/1-XI72aAgZON-g0F_Teo6kiA.jpeg) 
 
 我记得当迁移到 material 设计时，大多数人表现的像第一件要做的事是 burger/arrow 的事。在第一个 Google 实现中，制图工具不在工具栏的上方，且你也不会看到华丽的动画效果。指南出现之后，有一段*奇怪*的时刻，Google 应用程序做的正好与 Material 设计指南告诉我们的相反。而现在我写这篇文章时，Google 应用程序是遵循指南的，并且我希望不久以后看到全部应用程序中制图工具都在工具栏的上方。 
 
@@ -88,9 +88,9 @@ Google+ 照片可能是最后一个制图工具没有在 actionBar/Toolbar 上�
 
 在 Google Play Movies 和 Google Play Books 中的图像有一个白色的边框。其他 Google 应用程序中没有这个边框。Google+ 和 Hangouts 在工具栏中有资料图片，虽然它也有白色的边框。 
  
-![Material](../images/1-58WoVNOl-JIRyp1o3_f9JQ.jpeg) 
+![Material](../images/issue-145/1-58WoVNOl-JIRyp1o3_f9JQ.jpeg) 
 
-![Material](../images/1-v5KQiG7MNlpFdCjSk0WHqQ.jpeg) 
+![Material](../images/issue-145/1-v5KQiG7MNlpFdCjSk0WHqQ.jpeg) 
 
 *注意：*[*检查一下资料图片的大小*](https://medium.com/@sotti/navigation-drawer-styling-under-material-design-f0767882e692) 
 
@@ -104,13 +104,13 @@ Google+ 照片可能是最后一个制图工具没有在 actionBar/Toolbar 上�
 
 我所做的是在 FrameLayout 中应用前景。我不知道这是不是最好的方法，希望得到一些反馈。我没有可以切换的账户，对我来说，整个布局/部分是可点击的，带有触感反馈或 Lollipop 的连锁反应或全部。确保你使用 [centerCrop](https://developer.android.com/reference/android/widget/ImageView.ScaleType.html) 的 scaleType 来使它看起来更好。 
 
-![Material](../images/1-JnT0ei6pp-M7Fn0ZZxl-yg.jpeg) 
+![Material](../images/issue-145/1-JnT0ei6pp-M7Fn0ZZxl-yg.jpeg) 
 
 如果你查看上面图片，制图工具是可见的，且在状态栏的下方。此刻我写这点时，Google 应用程序仍然处于迁移到这种模式的过程中。 Gmail, Inbox, Keep, Play Store 和 Hangouts 已经有这种布局，而其他的应用程序正在进行中。此刻，这只发生在运行在 Lollipop 和以上版本中的应用程序中。 
 
-![Material](../images/1-0K95PBc-Ym1quF4S4-svlw.png)
+![Material](../images/issue-145/1-0K95PBc-Ym1quF4S4-svlw.png)
 
-![Material](../images/1-eYUlXFl-nKp54CbhSqHy5Q.png) 
+![Material](../images/issue-145/1-eYUlXFl-nKp54CbhSqHy5Q.png) 
 
 尽管当前在 Play Store 的 Google IO 应用程序中，导航制图工具是完全错误的，但是它们有更好的代码，并且为下一版本的发布(看起来还需要一段时间...从现在开始到几个月后的 Google IO 会议之前可能一直更新)做好了准备。 
 
@@ -122,39 +122,39 @@ ScrimInsets 布局能否应用于低于 Lollipop 的版本中，我也不清楚�
 
 *状态栏下的导航制图工具只会在 Lollipop 中出现。入侵状态栏或导航栏不 Lollipop 下的事，因此这可能就是不会发生的原因。*
 
-![Material](../images/1-l38m8vKyELP23Fgo0VIYLg.png) 
+![Material](../images/issue-145/1-l38m8vKyELP23Fgo0VIYLg.png) 
 
 当谈论到为制图工具中的主要行制订样式时，我们需要为每一行的每一个单元解决3个元素(背景，图标和文本)和3种不同的状态(默认，选中和按下)。并不是所有的东西都按照[说明](http://www.google.com/design/spec/patterns/navigation-drawer.html)来写，但是我们必须阅读说明，看看Google应用程序和其他看起来不错的应用程序，试图找出怎样能使它以Material 设计的方式看起来不错的方法。 
 
 好的，现在让我们看看一些 Google 应用程序来收集一些线索。在接下来的图片中，第一行是默认的状态，第二行是选中的状态，第三行是按下的状态。 
 
-![Material](../images/1-cbbbhJcPwsrL6XuF_7B-BA.jpeg) 
+![Material](../images/issue-145/1-cbbbhJcPwsrL6XuF_7B-BA.jpeg) 
 
-![Material](../images/1-S7YeU9ekl1_nC03isgeVBw.jpeg) 
+![Material](../images/issue-145/1-S7YeU9ekl1_nC03isgeVBw.jpeg) 
 
-![Material](../images/1-guYsqqXCcQikqMNMVTL1_g.jpeg) 
+![Material](../images/issue-145/1-guYsqqXCcQikqMNMVTL1_g.jpeg) 
 
-![Material](../images/1-fTlbwdydeGKNznbliR2J-g.jpeg) 
+![Material](../images/issue-145/1-fTlbwdydeGKNznbliR2J-g.jpeg) 
 
-![Material](../images/1-rzdSKrX4NgQqwPOeNReuTw.jpeg) 
+![Material](../images/issue-145/1-rzdSKrX4NgQqwPOeNReuTw.jpeg) 
 
-![Material](../images/1-ubYKjE5BgQUnuf8vXBjucA.jpeg) 
+![Material](../images/issue-145/1-ubYKjE5BgQUnuf8vXBjucA.jpeg) 
 
-![Material](../images/1-W0l0rAj_f08DcYiBKhnpYQ.jpeg) 
+![Material](../images/issue-145/1-W0l0rAj_f08DcYiBKhnpYQ.jpeg) 
 
-![Material](../images/1-WMsmw3UZ6kzBGaMCHPWgHA.jpeg) 
+![Material](../images/issue-145/1-WMsmw3UZ6kzBGaMCHPWgHA.jpeg) 
 
-![Material](../images/1-ZsjyMCtqBLG4iq7_ypaLUA.jpeg) 
+![Material](../images/issue-145/1-ZsjyMCtqBLG4iq7_ypaLUA.jpeg) 
 
-![Material](../images/1-Mn1OyDGujUgv3hXi-bBggw.jpeg) 
+![Material](../images/issue-145/1-Mn1OyDGujUgv3hXi-bBggw.jpeg) 
 
-![Material](../images/1-BV3ByPvh4Elbq2MKPrE-Bg.jpeg) 
+![Material](../images/issue-145/1-BV3ByPvh4Elbq2MKPrE-Bg.jpeg) 
 
 以上所有图片看起来相似但是它们都不相同。总结： 
 
-![Material](../images/1-BXfi8inb3rWh0gRCve5uCg.jpeg) 
+![Material](../images/issue-145/1-BXfi8inb3rWh0gRCve5uCg.jpeg) 
 
-![Material](../images/1-0_cj6ynaM0rDvBmQG0WJFw.png) 
+![Material](../images/issue-145/1-0_cj6ynaM0rDvBmQG0WJFw.png) 
 
 *Google 应用程序看上去很一致，但是当你注意细节你会发现此刻就在我写这篇文章时，超过 10 个应用程序在为导航制图工具中可选的行项目制订样式。* 
 
@@ -162,9 +162,9 @@ ScrimInsets 布局能否应用于低于 Lollipop 的版本中，我也不清楚�
 
 经过一些尝试，以及查看指南和Google应用程序，这就是我提出的。 
 
-![Material](../images/1-zU5_BF4hNM3ESUqqOyn7Dw.png) 
+![Material](../images/issue-145/1-zU5_BF4hNM3ESUqqOyn7Dw.png) 
 
-![Material](../images/1-X2iLimaiz8NgrdDtbcinFg.jpeg) 
+![Material](../images/issue-145/1-X2iLimaiz8NgrdDtbcinFg.jpeg) 
 
 ## 如何实现 
 
@@ -194,9 +194,9 @@ ScrimInsets 布局能否应用于低于 Lollipop 的版本中，我也不清楚�
 
 页脚部分(即设置和支持)可以被固定或者不被固定。如果你看看Google应用程序，有些是固定的，有些是在滚动条的底部。如果你不知道它们不能到达制图工具的底部，那么页脚只出现在主行之后。 
 
-![Material](../images/1-8HEdHs9YQq35OKtsCmAwLQ.png) 
+![Material](../images/issue-145/1-8HEdHs9YQq35OKtsCmAwLQ.png) 
 
-![Material](../images/1-JW5RFt4JfEahP9tqH3-bPg.png) 
+![Material](../images/issue-145/1-JW5RFt4JfEahP9tqH3-bPg.png) 
 
 在我看来,固定是最好的方法,但你可以做一些例外。例如当你固定页眉时,一些条目也就固定了,然后在制图工具中有一个可滚动的部分。如果滚动部分的空间很少以至于它看起来有些蠢笨(1 或 2 行),那么你可能就想获得更多的空间，而取消固定页脚是一个不错的选择。 
 

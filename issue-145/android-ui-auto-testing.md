@@ -2,7 +2,7 @@
 ## 概述
 这篇文章回顾了 Android UI 测试的四个策略，目的是创建快速、可靠和容易调试的 UI 测试。 
 
-开始之前，请不要忘记导入的规则：可以单元测试的要单元测试。Robolectric 和 gradle unit tests support 就是 Android 单元测试框架的很好的例子。UI 测试，从另一方面来说，是用来验证你的应用程序能否返回与设备中一系列的用户动作相呼应的正确的 UI 输出。Espresso 是一个很好的框架，用来在同一进程中运行 UI 操作和验证。更多关于 Espresso 和 UI Automator 工具，请参阅：test support libraries。 
+开始之前，请不要忘记导入的规则：可以单元测试的要单元测试。Robolectric 和 gradle unit tests support 就是 Android 单元测试框架的很好的例子。UI 测试，从另一方面来说，是用来验证你的应用程序能否返回与设备中一系列的用户动作相呼应的正确的 UI 输出。Espresso 是一个很好的框架，用来在同一(../images/issue-145/issue-145进程中运行 UI 操作和验证。更多关于 Espresso 和 UI Automator 工具，请参阅：test support libraries。 
 
 Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一个 UI 测试的策略中的经验教训。请继续关注带有更多的细节和代码示例的文章。 
 
@@ -12,7 +12,7 @@ Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一�
 
 通常，为了使应用程序 UI 功能化，你需要来自后端服务器的数据，所以 U I测试需要模拟数据，但不一定必需从后端服务器模拟。在许多情况下，U I测试与 E2E 测试混淆，这是因为 E2E 测试非常类似于手动测试场景。然而，由于许多变量的存在，如网络薄片，真实服务器的认证，系统的大小等等，使调试 E2E 测试及使 E2E 测试稳定非常困难。 
 
-![Android UI](../images/image04.png) 
+![Android UI](../images/issue-145/image04.png) 
 
 当你将 UI 测试用作 E2E 测试时，你将面临以下的问题： 
 
@@ -30,7 +30,7 @@ Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一�
 
 现在，客户端测试流看起来如下所示： 
 
-![Android UI](../images/image02.png) 
+![Android UI](../images/issue-145/image02.png) 
 
 虽然这种方法大大减小了测试规模和片状率，但是你仍然为你的测试保留一个单独的假服务器。调试仍然不容易，因为有两个移动的部分：测试和本地服务器。虽然通过这种方法，测试稳定性会大大的提高，但是本地服务期会导致一些薄片。 
 
@@ -42,7 +42,7 @@ Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一�
 
 这将提高你的应用程序的单元测试和 UI 测试的可测试性。为你提供有模拟依赖关系的能力的测试。在 instrumentation testing 中，测试程序和被测试的应用程序被装载在同一进程中，所以测试代码运行时访问应用程序的代码。不仅如此，你还可以使用类路径覆盖(事实是测试类路径优先于被测试的应用程序)来覆盖某一类或在那里注入虚伪。例如，为了使你的测试密封，你的应用程序应该支持网络实现的注入。在测试过程中，测试在你的应用程序中注入一个假的网络实现，这个假的实现将提供成熟的数据，而不是与后端服务器进行通信。 
 
-![Android UI](../images/image03.png) 
+![Android UI](../images/issue-145/image03.png) 
 
 ### 策略4：在更小的库中构建应用程序 
 
@@ -54,11 +54,11 @@ Google+ 团队实现许多 UI 测试的迭代。接下来我们讨论在每一�
 
 例如，我们可以考虑为登录和应用程序的设置构建更小的库。 
 
-![Android UI](../images/image00.png) 
+![Android UI](../images/issue-145/image00.png) 
 
 现在，设置组件测试看起来如下所示： 
 
-![Android UI](../images/image01.png)  
+![Android UI](../images/issue-145/image01.png)  
 
 ## 总结 
 
