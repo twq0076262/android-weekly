@@ -1,10 +1,10 @@
 # RecyclerView FastScroll – Part 2
 
 [请留言](https://blog.stylingandroid.com/recyclerview-fastscroll-part-2/#respond) 
-
+(../images/issue-145/issue-145
 在[之前的文章](https://blog.stylingandroid.com/recyclerview-fastscroll-part-1)中，我们学会了 FastScroller 控制框架。在这一结束篇中，我们将添加触摸和滚动行为。 
  
-![Recycler](../images/31.gif) 
+![Recycler](../images/issue-145/31.gif) 
 
 首先我们需要的是一种内部方法，当由于 FastScroller 的触摸事件或者 用户滚动了 *RecyclerView*，滚动的位置变化时，为了设置 bubble 和 handle 的位置，该方法会被调用： 
 

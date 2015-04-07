@@ -1,6 +1,4 @@
 # Android的模糊视图
- 
-
 
 ## 模糊效果 
 
@@ -21,7 +19,7 @@
 
 虽然这种方法非常有效，但是它并不完全适合我们的需要。[500 像素](https://500px.com/)的图像通常是重点内容，而不仅仅用于提供背景。那就意味着图像可能会改变很多，变化很快，即使它们在模糊层下。[Android 应用程序](https://play.google.com/store/apps/details?id=com.fivehundredpx.viewer)中的 tour 就是一个很好的例子。在这里，随着用户滑动页面，一排排的图片向相反的方向转变，并淡出，这使得为组合所需的模糊效果而恰当的管理多个预渲染图像变得非常困难。 
 
-![Android的模糊视图](../images/2015-03-17-500px-android-tour-blurring.png) 
+![Android的模糊视图](../images/issue-145/2015-03-17-500px-android-tour-blurring.png) 
 
 ## 试图绘制方法 
 
@@ -117,4 +115,4 @@ Tour 需要的是一个模糊视图，它能够动态的实时的模糊它下面
 
 为了看到我们的解决方案，你可以查看 [Android 应用程序](https://play.google.com/store/apps/details?id=com.fivehundredpx.viewer)中的 tour。我们也在 [GitHub 中](https://github.com/500px/500px-android-blur)建立一个小型的开源库，以及详细演示,展示了内容变化，动画以及视图转换的使用方法。
 
-![Android的模糊视图](../images/blurdemo.gif)
+![Android的模糊视图](../images/issue-145/blurdemo.gif)
