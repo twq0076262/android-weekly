@@ -1,71 +1,67 @@
 # Issue #145
 
->
-需要翻译的原文链接     
-http://androidweekly.net/issues/issue-145
 
-## ARTICLES & TUTORIALS
 
-**[Tips and Tricks for Android Material Support Library](tips-tricks-for-android-material-support-library.md)** (code.hootsuite.com)  
-The focus of this post is to help you put some polish on your design, and move closer to the Google Material design guidelines. The best part: none of these tips will require a designer or new assets.
+## 文章和教程
 
-**[Android UI Automated Testing](android-ui-automated-testing.md)** (googletesting.blogspot.com)   
-This post reviews four strategies for Android UI testing with the goal of creating UI tests that are fast, reliable, and easy to debug
+**[安卓Material支持库：Electric Boogaloo的提示与技巧](tips-and-tricks.md)** (code.hootsuite.com)  
+这篇文章的重点是帮你的设计增加一些亮点，并且让它更接近Google Material 设计指南。最好的部分是：这些设计不需要设计师或新的资产。
 
-**[RecyclerView FastScroll – Part 2](recyclerview-fastscroll-part-2.md)** (blog.stylingandroid.com)   
-This concluding article in this series shows how to add touch and scrolling behaviours.
+**[Android UI 自动化测试](android-ui-auto-testing.md)** (googletesting.blogspot.com)   
+这篇文章回顾了 Android UI 测试的四个策略，目的是创建快速、可靠和容易调试的 UI 测试。
 
-**[Navigation Drawer styling according to Material Design](navigation-drawer-styling-according-material-design.md)** (medium.com)   
-In this article the author discusses styling the navigation drawer control similar to Google apps.   
+**[RecyclerView FastScroll – 第二部分](recy-fastsrcoll.md)** (blog.stylingandroid.com)   
+我们学会了 FastScroller 控制框架。在这一结束篇中，我们将添加触摸和滚动行为。 
 
-**[A Blurring View for Android](a-blurring-view-for-android.md)** (developers.500px.com)   
-Blur effect can be used to vividly convey a sense of layering of content. It allows the user to maintain the context, while focused on the currently featured content, even if what’s under the blurring surface shifts in a parallax fashion or changes dynamically
+**[根据Material 设计导航制图工具样式](navi-drawer-styling.md)** (medium.com)   
+在这篇文章中，作者讨论了类似于Google apps的导航制图工具控制样式。
+  
+**[Android的模糊视图](a-blurring-view.md)** (developers.500px.com)   
+模糊效果可以生动的表达内容分层的含义。它允许用户保留上下文，同时专注于当前的特色内容，即使在模糊表面下以视差方式变换或动态的更改。 
 
-**[Archive additional Android artifacts with Gradle](archive-addition-android-artifacts-with-gradle.md)** (wiebe-elsinga.com)   
-When building Android applications or libraries common practice is to save your artifacts to a local file storage or repo. Wiebe Elsinga shows you how to do this with Gradle.
+**[附加Android工件和Gradle的档案](archive-additional-android-artifacts.md)** (wiebe-elsinga.com)   
+当构建 Android 应用程序或库时，常见的做法是将你的工件保存到本地文件储存或回购。 
  
-**[The mysterious case of the Bundle and the Map](the-mysterious-case-of-the-bundle-and-the-map.md)** (medium.com)   
-Because putting Maps in a Bundle is harder than it looks.
+**[映射与包的神秘关系](mysterious-case.md)** (medium.com)   
+因为把Maps放在一个包中比看起来要困难的多。
  
-**[The introduction to Reactive Programming you've been missing](introduction-to-reactive-programming.md)** (gist.github.com)   
-So you're curious about this new thing called Reactive Programming, particularly its variant comprising of Rx, Bacon.js, RAC, and others.
+**[响应式编程](introduction-to-RP.md)** (gist.github.com)   
+很明显你是有兴趣学习这种被称作响应式编程的新技术才来看这篇文章的，特别是它的变体，包括Rx, Bacon.js, RAC等等。
  
-**[Postponed Shared Element Transitions (part 3b)](activity-postponed-shared-element-transitions-part3b.md)** (www.androiddesignpatterns.com)   
-This post continues Alex Lockwood's in-depth analysis of shared element transitions by discussing an important feature of the Lollipop Transition API: postponed shared element transitions.
+**[延期的共享元素转换(3b)](postponed-shared-element-transitions.md)** (www.androiddesignpatterns.com)   
+这篇文章我们通过讨论 Lollipop Transition API：延期的共享元素转换，来继续深入分析共享元素转换。这是这一系列文章的第四部分，我会通过以下观点展开： 
  
-**[Parameterized testing with Robolectric](parameterized-testing-with-robolectric.md)** (www.jayway.com)   
-Recently the author needed to write a test case that performed an operation several times, but with different test data. It turns out Robolectric has a ParameterizedRobolectricTestRunner,
+**[用Robolectric进行参数化测试](parameterized-testing-with-robolectric.md)** (www.jayway.com)   
+最近,作者需要编写一个测试用例,一个操作多次执行,但每次执行要用不同的测试数据。原来Robolectric 有一个参数化Robolectric测试运行器
  
-**[Hello Places API for Android](hello-places-api-for-android-and-ios.md)** (android-developers.blogspot.com)   
-The Places APIs for Android (and iOS) bridge the gap between simple geographic locations expressed as latitude and longitude, and how people associate location with a known place.
+**[欢迎为 Android 和 iOS 嵌入 API ](hello-palces-api.md)** (android-developers.blogspot.com)   
+为Android (和iOS)设置Places APIs连通了简单的经纬度表示的地理位置之间的差距,以及人们如何与一个已知的位置相关联。
 
-## SPONSORED
+## 赞助
 
-**[Free App Testing + Optimization for Android （这个链接文章不用翻译）](https://software.intel.com/en-us/android/app-testing)** (software.intel.com)    
-Discover FREE app testing services available to test your apps created for Intel-based Android devices. Help your app perform its best. Click for details.
+**[Free App Testing + Optimization for Android ](https://software.intel.com/en-us/android/app-testing)** (software.intel.com)    
+免费的Android应用程序测试+优化(software.intel.com) 发现免费软件测试服务可用来测试您的基于英特尔处理器的Android设备创建的应用程序。帮助您的app得到最好的应用。点击查看详情。
 
 
-## LIBRARIES & CODE
+## 库和代码
 
-**[Jackdaw（这个链接文章不用翻译）](https://github.com/vbauer/jackdaw)** (github.com)   
-Jackdaw is a Java Annotation Processor which allows to simplify Java/Android development and prevents writing of tedious code. Jackdaw was inspired by Lombok project, but in comparison with Lombok: it does not need to have an extra plugin in IDE and it does not modify the existing source code.
+**[Jackdaw](https://github.com/vbauer/jackdaw)** (github.com)   
+Jackdaw是一个注解处理器，它允许简化Java/Android开发，防止编写枯燥的代码。Jackdaw的灵感来源于Lombok项目,但与Lombok相比:它在IDE上不需要额外的插件，并且它不修改现有的源代码。
  
-**[Open-Source-Android-Apps（这个链接文章不用翻译）](https://github.com/pcqpcq/open-source-android-apps)** (github.com)   
-This is a collection of Android Apps with Open Source.  
+**[Open-Source-Android-Apps](https://github.com/pcqpcq/open-source-android-apps)** (github.com)   
+这是一个开源的Android应用程序集合。  
 
-## NEWS
+## 新闻
 
-**[Creating Better User Experiences on Google Play](creating-better-user-experiences-on.md)** (android-developers.blogspot.com)   
-Google is introducing a new age-based rating system for apps and games on Google Play. They have also begun reviewing apps before they are published on Google Play to better protect the community and improve the app catalog.  
+**[在谷歌市场上创造更好的用户体验](creating-better-user-experiences.md)** (android-developers.blogspot.com)   
+谷歌正在为Google Play中的应用和游戏引入一种新的基于年龄的评分系统。在应用和游戏发表在Google Play之前他们也开始审查这些应用程序，使得能更好地保护社区和提高应用程序目录。
+## 工具
 
-## TOOLS
 
+**[Victor](https://github.com/trello/victor)** (github.com)   
+Victor (github.com)，有了这个Gradle插件,您可以为SVGs定义源文件夹，它们将自动的栅格/包含在您的构建中，且不会干扰您的源代码。
 
-**[Victor（这个链接文章不用翻译）](https://github.com/trello/victor)** (github.com)   
-With this Gradle plugin, you can define source folders for SVGs and they will automatically be rasterized/included in your build without messing with your source code.
+## 特价  
 
-## SPECIALS  
-
-**[AnDevCon, July 29-31, Boston（这个链接文章不用翻译）](http://www.andevcon.com/)** (www.andevcon.com)    
-AnDevCon is the leading technical conference for software developers building Android apps. Choose from more than 75 classes and tutorials and visit with more than 40 top exhibitors, all 100% focused on Android development. Use code ANDROID for a $200 discount off the prevailing rate.
-
+**[AnDevCon, July 29-31, Boston](http://www.andevcon.com/)** (www.andevcon.com)    
+AnDevCon是构建Android应用程序的软件开发人员的最主要的技术会议。从超过75个类和教程中选择，有 40多个顶级参展商互相交流，全部100%集中在Android开发上。使用比普遍价格低200美元的ANDROID代码。

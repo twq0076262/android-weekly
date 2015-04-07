@@ -1,4 +1,4 @@
-#欢迎为 Android 和 iOS 嵌入 API 
+# 欢迎为 Android 和 iOS 嵌入 API 
 
 由 Jen Kovnats Harrington 发布，谷歌地图API的产品经理 
 
@@ -21,5 +21,5 @@ Android 和 iOS 的 Places API 为简单表示地理位置的经度和纬度缩�
 
 为了在 Android 上开始使用 Places API，查看 [DevByte](https://www.youtube.com/watch?v=xPo3gfTXXOQ),检查[开发文档](https://developers.google.com/places/android?utm_campaign=placesapi-315&utm_source=dac&utm_medium=blog)，并演示播放。为了在 iOS 测试程序上申请应用 Places API，看[这里](https://developers.google.com/places/ios/?utm_campaign=placesapi-315&utm_source=dac&utm_medium=blog)。
 
-![](https://github.com/zemu121/image/raw/master/image022.png) 
+![嵌入 API](images/image022.png) 
 
