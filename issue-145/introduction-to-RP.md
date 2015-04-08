@@ -4,8 +4,7 @@
 
 学习响应式编程是很困难的一个过程，特别是在缺乏优秀资料的前提下。刚开始学习时，我试过去找一些教程，并找到了为数不多的实用教程，但是它们都流于表面，从没有围绕响应式编程构建起一个完整的知识体系。库的文档往往也无法帮助你去了解它的函数。不信的话可以看一下这个：  
 
->Rx.Observable.prototype.flatMapLatest(selector, [thisArg])
- Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence. 
+>通过合并元素的指针，将每一个可观察的元素序列放射到一个新的可观察的序列中，然后将多个可观察的序列中的一个转换成一个只从最近的可观察序列中产生值得可观察的序列。
 
 天啊。 
 
