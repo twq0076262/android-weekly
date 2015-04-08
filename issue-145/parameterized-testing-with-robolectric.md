@@ -7,10 +7,10 @@
 事实证明，Robolectric 有一个完全一样的[参数化 Robolectric 测试运行器](https://github.com/robolectric/robolectric/blob/master/robolectric/src/main/java/org/robolectric/ParameterizedRobolectricTestRunner.java)（但略微有些调整，以符合Robolectric），并且在验证应用程序接收来自外部服务提供商的不同的错误代码的行为测试时工作的非常好。 
 
 ```
-    @RunWith(ParameterizedRobolectricTestRunner.class)
+    RunWith(ParameterizedRobolectricTestRunner.class)
 	public class ContactServiceTest {
  
-    	@ParameterizedRobolectricTestRunner.Parameters(name = "ErrorCode = {0}")
+    	ParameterizedRobolectricTestRunner.Parameters(name = "ErrorCode = {0}")
     	public static Collection<Object[]> data() {
         	return Arrays.asList(new Object[][]{
                 	{105, 105_ERROR_MSG},
@@ -30,7 +30,7 @@
         	this.expectedErrorMsg = errorMsg;
     	}
  
-    	@Test
+    	Test
     	public void when_known_error_code_is_received_from_service_correct_error_msg_is_displayed_to_user() {
         	// HTTP response from service contains defined error code
         	Robolectric.addPendingHttpResponse(HttpStatus.SC_OK, buildFakeServiceResponse(errorCode)); 
