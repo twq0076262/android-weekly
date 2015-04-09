@@ -70,7 +70,7 @@ Google+ 照片可能是最后一个制图工具没有在 actionBar/Toolbar 上�
 
 当你第一次在 *DrawerArrowStyle* 中看到如下的选项时，看起来非常容易： 
 
-[<]()[item name=”spinBars”>true](https://developer.android.com/reference/android/support/v7/mediarouter/R.attr.html#spinBars)[<]()[item>]() 
+[item name=”spinBars”>true](https://developer.android.com/reference/android/support/v7/mediarouter/R.attr.html#spinBars)
 
 [它在 Android 开发者中定义如下](https://developer.android.com/reference/android/support/v7/appcompat/R.attr.html#spinBars)： 
 
