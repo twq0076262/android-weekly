@@ -1,9 +1,5 @@
 # 用Robolectric进行参数化测试 
 
-2015年3月19日由 [Einar Valgeirsson[(http://www.jayway.com/author/einar-valgeirssonjayway-com/) 在 [Android](http://www.jayway.com/category/android/) 中[测试](http://www.jayway.com/category/testing/) | [无评论](http://www.jayway.com/2015/03/19/parameterized-testing-with-robolectric/#respond)
-
-![Robolectric](../images/DSC_9510-150x150.jpg) 
-
 在我们目前的项目中，我们使用 [Robolectric](https://github.com/robolectric/robolectric) 为 Android 应用程序编写单元测试，并且它一直都很好用。最近我需要编写一个操作需要执行几次并且需要用到不同的测试数据的一个测试用例，还要断言正确的行为发生取决于数据。 
 
 对于所谓的[参数化测试](https://github.com/junit-team/junit/wiki/Parameterized-tests)，Junit 具有一个易于使用的选项，其中一项里面定义了测试数据，然后可以使用[参数化测试运行器](https://github.com/junit-team/junit/blob/master/src/main/java/org/junit/runners/Parameterized.java)来执行测试。这将为测试数据的每一个元素创建测试类的一个实例，其中测试数据被传递给构造函数。 
