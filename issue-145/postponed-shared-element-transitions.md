@@ -17,7 +17,8 @@
 
 在转换开始之前，共享元素的结束值是否被计算出来主要取决于两个因素：(1)被调用的 activity 的布局的复杂性和深度，(2)调用的 activity 加载所需数据的时间。布局越复杂，那么决定共享元素在屏幕上显示的位置和大小所花费的时间就越长。同样地，如果 activity 内共享元素的最终外观取决于异步加载数据，那么在数据传递回主线程之前，框架有可能自动的启动共享元素转换。下面列出的是一些你可能会遇到的常见的问题： 
 
-- **共享元素在一个`Fragment`中，它寄存在被调用的 activity 中。** [FragmentTransactions 在被命令后不是立即执行](https://developer.android.com/reference/android/app/FragmentTransaction.html#commit())；当主线程的工作结束后，它们稍后执行。所以，如果共享元素在 `Fragment` 的视图层的内部，并且 `FragmentTransaction` 执行的不够迅速，那么框架有可能在共享元素正确衡量之前就启动共享元素转换，并在屏幕上布局。[1](http://www.androiddesignpatterns.com/2015/03/activity-postponed-shared-element-transitions-part3b.html#footnote1)
+- **共享元素在一个`Fragment`中，它寄存在被调用的 activity 中。**  
+- [FragmentTransactions 在被命令后不是立即执行](https://developer.android.com/reference/android/app/FragmentTransaction.html#commit())；当主线程的工作结束后，它们稍后执行。所以，如果共享元素在 `Fragment` 的视图层的内部，并且 `FragmentTransaction` 执行的不够迅速，那么框架有可能在共享元素正确衡量之前就启动共享元素转换，并在屏幕上布局。[1](http://www.androiddesignpatterns.com/2015/03/activity-postponed-shared-element-transitions-part3b.html#footnote1)
 
 - **共享元素是一个高分辨率的图像**。设置一个超过 `ImageView` 最初的范围的高分辨率图像，可能会[引发额外的布局](https://github.com/android/platform_frameworks_base/blob/lollipop-release/core/java/android/widget/ImageView.java#L453-L455)甚至视图层次,因此在共享元素准备好之前就开始转换的可能性会增加。流行的位图加载/扩展库的异步性质，如 [Volley](https://android.googlesource.com/platform/frameworks/volley) 和  [Picasso](http://square.github.io/picasso/)，不会可靠的解决这个问题：框架没有图像被下载，扩展，和/或从后台线程的磁盘获取的这些先验知识，所以无论图像是否正在被处理，框架都会启动共享元素转换。 
 
